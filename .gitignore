@@ -1,0 +1,6 @@
+# Can ignore specific files
+npm-debug.log
+
+# Can also ignore all directories and files in a directory.
+dist
+node_modules

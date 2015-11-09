@@ -1,0 +1,21 @@
+{
+  "name": "browsify",
+  "version": "1.0.0",
+  "description": "test browsify project",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "react": "^0.14.1"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sajinrules@gmail.com",
+  "license": "ISC"
+}
