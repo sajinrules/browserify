@@ -4,9 +4,13 @@
   "description": "test browsify project",
   "main": "gulpfile.js",
   "dependencies": {
-    "react": "^0.14.1"
+    "material-ui": "^0.13.2",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-tap-event-plugin": "^0.2.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "browserify": "^12.0.1",
     "del": "^2.0.2",
     "gulp": "^3.9.0",

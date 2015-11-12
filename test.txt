@@ -1,0 +1,6 @@
+<Menu>
+							<MenuItem  index={1} primaryText="Maps" />
+							<MenuItem  index={2} primaryText="Books" />
+							<MenuItem  index={3} primaryText="Flights" />
+							<MenuItem  index={4} primaryText="Apps" />
+						</Menu>

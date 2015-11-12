@@ -1,10 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var NavBar = require('./components/NavBar.jsx');
+var injectTapEventPlugin = require("react-tap-event-plugin");
 
-var HelloMessage = React.createClass({
-  render: function() {
-    return <div>Hello {this.props.name}</div>;
-  }
-});
+//Needed for onTouchTap
+//Can go away when react 1.0 release
+//Check this repo:
+//https://github.com/zilverline/react-tap-event-plugin
+injectTapEventPlugin();
 
-ReactDOM.render(<HelloMessage name="John" />, document.getElementById('main'));
+ReactDOM.render(<NavBar />, document.getElementById('main'));
