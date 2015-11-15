@@ -17,9 +17,9 @@ var AppComponent = React.createClass({
 					iconElementLeft={<IconButton><NavigationClose /></IconButton>}
 					iconElementRight={
 						<IconMenu iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}>
-								<MenuItem index={1} primaryText="Refresh" />
-								<MenuItem index={2} primaryText="Help" />
-								<MenuItem index={3} primaryText="Sign out" />
+								<MenuItem index={1}>One</MenuItem>
+								<MenuItem index={2}>Two</MenuItem>
+								<MenuItem index={3}>Three</MenuItem>
 						</IconMenu>
 						
 					}/>
