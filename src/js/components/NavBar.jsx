@@ -8,6 +8,8 @@ const MoreVertIcon = require('material-ui/lib/svg-icons/navigation/more-vert');
 const Menu = require('material-ui/lib/menus/menu');
 const MenuItem = require('material-ui/lib/menu/menu-item');
 const MenuDivider = require('material-ui/lib/menus/menu-divider');
+const LeftNav = require('material-ui/lib/left-nav');
+const FontIcon = require('material-ui/lib/font-icon');
 
 var AppComponent = React.createClass({
 	render() {
