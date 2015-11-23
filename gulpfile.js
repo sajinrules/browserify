@@ -94,7 +94,7 @@ gulp.task('copy',function(){
 
 // create a task that ensures the `js` task is complete before
 // reloading browsers
-gulp.task('js-watch', ['browserify','copy'], browserSync.reload('./index.html'));
+gulp.task('js-watch', ['browserify','copy'], reload());
 
 // use default task to launch Browsersync and watch JS files
 gulp.task('serve', ['browserify','copy'], function () {
@@ -102,7 +102,8 @@ gulp.task('serve', ['browserify','copy'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./dist",
+            browser: "google chrome"
         }
     });
 
