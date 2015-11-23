@@ -1,4 +1,5 @@
 var React = require('react');
+var RouteHandler = require('react-router').RouteHandler
 //var RaisedButton = require('material-ui/lib/raised-button');
 const AppBar = require('material-ui/lib/app-bar');
 const IconButton = require('material-ui/lib/icon-button');
@@ -14,6 +15,7 @@ const FontIcon = require('material-ui/lib/font-icon');
 var AppComponent = React.createClass({
 	render() {
 		return (
+			<div>
 				<AppBar  
 					title="Title"
 					iconElementLeft={<IconButton><NavigationClose /></IconButton>}
@@ -25,6 +27,9 @@ var AppComponent = React.createClass({
 						</IconMenu>
 						
 					}/>
+				{this.props.children}
+			</div>
+				
 		);
 	},
 });
