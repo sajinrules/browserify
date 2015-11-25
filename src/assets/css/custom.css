@@ -1,0 +1,10 @@
+
+.container {
+	width: 95%;
+	margin: 0px auto;
+}
+.center{
+	width: 50%;
+	margin: 0px auto;
+	text-align: center;
+}

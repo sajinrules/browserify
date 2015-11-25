@@ -27,7 +27,10 @@ var AppComponent = React.createClass({
 						</IconMenu>
 						
 					}/>
-				{this.props.children}
+				<div className="container">
+					{this.props.children}
+				</div>	
+				
 			</div>
 				
 		);
