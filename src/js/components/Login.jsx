@@ -2,6 +2,11 @@ var React = require('react');
 const TextField = require('material-ui/lib/text-field');
 const FlatButton = require('material-ui/lib/flat-button');
 var AppActions = require('../actions/app-actions');
+var AppStore = require('../stores/app-stores');
+var AppConstants 	= require('../constants/app-constants');
+var EventEmitter = require('events').EventEmitter;
+var Router = require('react-router').Router
+var Route = require('react-router').Route
 
 var LoginComponent = React.createClass({
 	getInitialState: function() {
@@ -16,6 +21,16 @@ var LoginComponent = React.createClass({
 				Password: ''
 			}*/
 	},
+	componentDidMount: function () {
+       //var emitter = new EventEmitter();
+		console.log("AppStore:",AppStore);
+		console.log("this:",this);
+		AppStore.on('LOGGED_IN',function(data){
+			console.log("LOGGED_IN:",data);	
+			console.log("Router:",Router.transitionTo);
+			console.log("Route:",Route.transitionTo);
+		})
+    },
 	onChange: function(field,e) {
 		/*console.log("e:",e)
 		console.log("e:",e.target.value);

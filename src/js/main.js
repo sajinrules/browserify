@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var NavBar = require('./components/NavBar.jsx');
 var Login = require('./components/Login.jsx');
+var Dashboard = require('./components/Dashboard.jsx');
 var Router = require('react-router').Router
 var Route = require('react-router').Route
 var Link = require('react-router').Link
@@ -18,8 +19,8 @@ ReactDOM.render(
 	(
 		<Router>
 			<Route path="/" component={NavBar}>
-			<IndexRoute component={Login} />
-				
+				<IndexRoute component={Login} />
+				<Route path="dashboard" component={Dashboard}/>
 			</Route>
 			
 		</Router>

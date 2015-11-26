@@ -5,7 +5,7 @@ var AppDispatcher = assign(new Dispatcher(),{
 	handleLoginAction :function(action){
 		console.log("action:",action);
 		this.dispatch({
-			source : 'VIEW_ACTION',
+			source : 'LOGIN_ACTION',
 			action : action
 		})
 	}

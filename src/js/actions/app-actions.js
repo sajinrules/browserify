@@ -5,7 +5,7 @@ var AppActions = {
 	login : function(data){
 		console.log("data:",data);
 		AppDispatchers.handleLoginAction({
-			actionType : AppConstants.VIEW_ACTION,
+			actionType : AppConstants.LOGIN_ACTION,
 			data       : data
 		})
 	}

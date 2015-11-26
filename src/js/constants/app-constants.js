@@ -1,3 +1,4 @@
 module.exports = {
-	VIEW_ACTION: 'VIEW_ACTION'
+	LOGIN_ACTION: 'LOGIN_ACTION',
+	LOGGED_IN :'LOGGED_IN'
 }
